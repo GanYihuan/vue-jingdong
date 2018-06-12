@@ -2,7 +2,7 @@
 
 ## 2-1
 
-- 管理node版本 nvm
+- manage node version: nvm
 
 ```shell
 nvm ls
@@ -13,3 +13,5 @@ nvm use 8.9.1
 - git
 
 ## 3-2
+
+## 4-3: scss modular
