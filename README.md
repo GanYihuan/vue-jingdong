@@ -14,4 +14,6 @@ nvm use 8.9.1
 
 ## 3-2
 
-## 4-3: scss modular
+## 4-2: scss modular ✨✨✨
+
+## 4-3: adaptive ✨✨✨✨
