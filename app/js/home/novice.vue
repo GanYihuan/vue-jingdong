@@ -50,21 +50,21 @@ export default {
 				text-align: center;
 				border-right: 1px solid #ddd;
 				img {
+					margin: 20px auto 0;
 					width: 132px;
 					height: 132px;
-					margin: 20px auto 0;
 				}
 			}
 			h4 {
-				font-size: 26px;
 				line-height: 40px;
+				font-size: 26px;
 			}
 			.red {
 				color: #f00;
 			}
 			.gray {
+        font-size: 24px;
 				color: #999;
-				font-size: 24px;
 			}
 			p {
 				margin-top: 6px;
@@ -73,23 +73,25 @@ export default {
 			ul {
 				width: 100%;
 				li {
+					box-sizing: border-box;
+					padding: 32px 28px;
 					height: 144px;
 					width: 100%;
-					padding: 32px 28px;
-					box-sizing: border-box;
 					&:first-child {
 						border-bottom: 1px solid #ddd;
 					}
 					h4 {
-						white-space: nowrap;
+            text-align: left;
+            // 超出显示...
 						text-overflow: ellipsis;
 						overflow: hidden;
-						text-align: left;
+            white-space: nowrap;
+            // 超出显示...
 					}
 					img {
+						float: right;
 						width: 80px;
 						height: 80px;
-						float: right;
 					}
 				}
 			}

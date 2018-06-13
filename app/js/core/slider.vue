@@ -6,6 +6,7 @@
           <img :src="item.src" alt="">
         </router-link>
       </swiper-slide>
+      <!-- slot="pagination": swiper官网, SPA用法 -->
       <div class="swiper-pagination" v-if="options.pagination" slot="pagination"/>
     </swiper>
   </section>
