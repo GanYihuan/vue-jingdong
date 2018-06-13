@@ -17,3 +17,16 @@ nvm use 8.9.1
 ## 4-2: scss modular ✨✨✨
 
 ## 4-3: adaptive ✨✨✨✨
+
+[CSS像素、物理像素、逻辑像素、设备像素比、PPI、Viewport](https://github.com/jawil/blog/issues/21)
+
+- css pixel
+- meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"
+- rem & em
+- working principle
+
+## 4-4: spa, Hash
+
+- spa做了什么，怎么做到的
+
+- Hash
