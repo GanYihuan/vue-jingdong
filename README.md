@@ -50,3 +50,8 @@ nvm use 8.9.1
 
 - **novice.vue**
 - 超出显示...
+
+## 5-10, 5-11, 5-12: borrow ✨✨✨
+
+- **borrow.vue**
+- css伪元素

@@ -1,6 +1,7 @@
 <template lang="html">
   <Panel title="理财精选" :class="$style.panel">
     <section :class="$style.content">
+      <!-- dl: 使用它作为选择器更优化 -->
       <dl :class="$style.item" v-for="item in items" :key="item.title">
         <dt>{{ item.title }}<span>{{ item.sub }}</span></dt>
         <dd>{{ item.rate }}</dd>
@@ -58,30 +59,34 @@ export default {
 		justify-content: space-around;
 		box-sizing: border-box;
 		&:after {
-			content: ' ';
-			display: block;
-			width: 100%;
-			height: 0px;
-			box-sizing: border-box;
-			border-bottom: 1px solid #ddd;
+      display: block;
+      // 允许有偏移量
 			position: relative;
 			top: -208px;
+			box-sizing: border-box;
+			border-bottom: 1px solid #ddd;
+			width: 100%;
+			height: 0px;
+			content: ' ';
 		}
 		.item {
+      // 为下面position: absolute;准备
 			position: relative;
-			width: 50%;
 			box-sizing: border-box;
+      width: 50%;
+      // 断线
 			&:after {
-				content: ' ';
-				width: 1px;
-				height: 136px;
 				display: block;
 				position: absolute;
 				top: 50%;
 				right: 0;
 				margin-top: -68px;
 				border-right: 1px solid #eee;
-			}
+				width: 1px;
+				height: 136px;
+				content: ' ';
+      }
+      // 后面的断线不需要
 			&:nth-child(2n) {
 				&:after {
 					display: none;
@@ -89,37 +94,37 @@ export default {
 			}
 			padding: 34px 16px;
 			dt {
-				font-size: 30px;
 				line-height: 42px;
+				font-size: 30px;
 				color: #333;
 				span {
-					font-size: 22px;
-					color: #ff5155;
+					margin-left: 2px;
 					border: 1px solid #ff5155;
 					padding: 0 8px;
 					vertical-align: 1px;
-					margin-left: 2px;
+					font-size: 22px;
+					color: #ff5155;
 				}
 			}
 			dd {
 				&:nth-child(2) {
-					font-weight: 700;
-					font-size: 44px;
+					overflow: hidden;
 					height: 58px;
 					line-height: 58px;
-					color: #ff5155;
-					white-space: nowrap;
 					text-overflow: ellipsis;
-					overflow: hidden;
+					font-weight: 700;
+					font-size: 44px;
+					white-space: nowrap;
+					color: #ff5155;
 				}
 				&:nth-child(3) {
-					font-size: 24px;
-					height: 34px;
-					line-height: 34px;
-					color: #999;
-					white-space: nowrap;
-					text-overflow: ellipsis;
 					overflow: hidden;
+          height: 34px;
+					line-height: 34px;
+					text-overflow: ellipsis;
+					font-size: 24px;
+					white-space: nowrap;
+					color: #999;
 				}
 			}
 		}
