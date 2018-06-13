@@ -59,10 +59,10 @@ export default {
 				display: inline-block;
 				width: 100%;
 				img {
-					width: 100%;
 					display: block;
-					height: 314px;
 					border: 1px solid #fafafa;
+					width: 100%;
+					height: 314px;
 				}
 			}
 		}
@@ -75,14 +75,14 @@ export default {
 .panel {
 	@include panel;
 	.content {
-		padding-bottom: 40px;
 		position: relative;
+		padding-bottom: 40px;
 		& > div {
 			position: absolute;
-			font-size: 28px;
-			color: #999;
 			right: 20px;
 			top: -70px;
+			font-size: 28px;
+			color: #999;
 		}
 	}
 }
