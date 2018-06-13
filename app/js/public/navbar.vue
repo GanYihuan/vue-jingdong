@@ -48,12 +48,14 @@ export default {
 @import '../../css/element.scss';
 .panel {
 	@include panel;
-	position: fixed;
+  position: fixed;
+  // width: 100%
 	left: 0;
-	right: 0;
+  right: 0;
+  // width: 100%
 	bottom: 0;
-	height: 100px;
 	margin: 0;
+	height: 100px;
 	> h4 {
 		display: none;
 	}
@@ -66,10 +68,10 @@ export default {
 				text-decoration: none;
 			}
 			img {
-				width: 44px;
-				height: 44px;
 				display: inline-block;
 				margin: 12px auto 6px;
+				width: 44px;
+				height: 44px;
 			}
 			p {
 				font-size: 22px;

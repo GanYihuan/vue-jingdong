@@ -61,3 +61,5 @@ nvm use 8.9.1
 ## 5-14: life ✨✨
 
 ## 5-15: footer
+
+## 5-16: navbar
