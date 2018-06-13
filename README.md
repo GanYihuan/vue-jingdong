@@ -59,3 +59,5 @@ nvm use 8.9.1
 ## 5-13: product ✨✨
 
 ## 5-14: life ✨✨
+
+## 5-15: footer

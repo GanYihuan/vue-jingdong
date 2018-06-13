@@ -55,42 +55,43 @@ export default {
 		li {
 			width: 100%;
 			text-align: center;
-			color: #999;
 			font-size: 24px;
+			color: #999;
 			> img {
 				width: 100%;
 				height: 143px;
 			}
 			&:nth-child(2) {
 				@include flex(row);
-				height: 186px;
 				box-sizing: border-box;
+				height: 186px;
 				> div {
-					width: 33.3333%;
-					text-align: center;
 					box-sizing: border-box;
 					padding-top: 20px;
+					width: 33.3333%;
+					text-align: center;
 					img {
 						width: 90px;
 						height: 90px;
 					}
 					p {
+            display: block;
+						overflow: hidden;
+						margin-top: 12px;
 						font-size: 26px;
 						text-align: center;
-						display: block;
-						color: #999;
-						margin-top: 12px;
-						white-space: nowrap;
 						text-overflow: ellipsis;
-						overflow: hidden;
+						white-space: nowrap;
+						color: #999;
 					}
 				}
-			}
+      }
+      // 第三个开始往后
 			&:nth-child(n + 3) {
+				border-top: 1px solid #ddd;
 				padding: 24px 0;
 				height: 38px;
 				line-height: 38px;
-				border-top: 1px solid #ddd;
 			}
 		}
 	}
