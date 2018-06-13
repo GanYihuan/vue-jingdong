@@ -3,7 +3,7 @@
     <Slider :items="items" :cname="$style.slider"/>
     <section :class="$style.list">
       <div :class="$style.item" v-for="item in enters" :key="item.img">
-        <router-link :to="{ name: item.href}">
+        <router-link :to="{name: item.href}">
           <img :src="item.img" :alt="item.title">
           <h4>{{ item.title }}</h4>
         </router-link>
@@ -22,7 +22,7 @@ export default {
 		return {
 			items: [
 				{
-					href: 'home',
+					href: 'home', 
 					src:
 						'//img12.360buyimg.com/jrpmobile/jfs/t13744/11/2508939408/43213/58bfe502/5a421ff3N52d0a474.jpg?width=750&height=320'
 				},
