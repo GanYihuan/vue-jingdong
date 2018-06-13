@@ -56,4 +56,6 @@ nvm use 8.9.1
 - **borrow.vue**
 - css伪元素
 
-## 5-13: product
+## 5-13: product ✨✨
+
+## 5-14: life ✨✨

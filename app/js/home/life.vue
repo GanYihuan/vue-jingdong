@@ -51,12 +51,12 @@ export default {
 				height: 90px;
 			}
 			p {
-				font-size: 26px;
-				color: #666;
-				text-overflow: ellipsis;
-				white-space: nowrap;
 				overflow: hidden;
 				margin-top: 12px;
+				text-overflow: ellipsis;
+				font-size: 26px;
+				white-space: nowrap;
+        color: #666;
 				&:nth-child(3) {
 					color: #ff801a;
 				}
