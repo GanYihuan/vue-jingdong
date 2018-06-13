@@ -33,6 +33,10 @@ nvm use 8.9.1
 
 ## 4-5: 构建工具 ✨
 
-## 5-1, 5-2: abstract design
+## 5-1, 5-2: abstract design ✨✨✨
 
 - view-awesome-swiper
+
+## 5-3: header ✨✨✨
+
+- **header.vue**

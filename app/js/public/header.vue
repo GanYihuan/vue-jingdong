@@ -17,35 +17,38 @@ export default {
 </script>
 
 <style lang="scss" module>
+// module: 局域化
 .header {
-	color: #666;
+	position: fixed;
+  top: 0;
+  // width: 100%
+	left: 0;
+  right: 0;
+  // width: 100%
+	z-index: 100;
 	height: 100px;
 	line-height: 100px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
 	font-size: 32px;
+	color: #666;
 	background: #fff url(//m.jr.jd.com/spe/qyy/main/images/jr-logo.png) center
 		center no-repeat;
 	background-size: auto 50%;
-	z-index: 100;
 	.left {
-		font-size: 28px;
+    margin: 17px 0 0 18px;
 		height: 30px;
 		line-height: 30px;
-		margin: 17px 0 0 18px;
+		font-size: 28px;
 	}
 	.btnDownload {
 		float: right;
-		font-size: 24px;
+		margin: 28px 24px 0 0;
+		border-radius: 4px;
 		border-width: 0;
+		padding: 0;
+		min-width: 120px;
 		height: 56px;
 		line-height: 56px;
-		min-width: 120px;
-		padding: 0;
-		border-radius: 4px;
-		margin: 28px 24px 0 0;
+		font-size: 24px;
 	}
 }
 </style>
