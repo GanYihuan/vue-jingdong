@@ -65,3 +65,5 @@ nvm use 8.9.1
 ## 5-16: navbar ✨✨
 
 ## 6-1: money/mslider, ada, money ✨✨
+
+## 6-2: finance
