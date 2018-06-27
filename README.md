@@ -1,6 +1,6 @@
 # Vue-05-前端面试项目冲刺，京东金融Vue组件化实战
 
-## 2-1
+## 2-1 环境及知识准备
 
 - manage node version: nvm
 
