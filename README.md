@@ -5,25 +5,29 @@
 - manage node version: nvm
 
 ```shell
+<!-- 查看已经安装的node版本 -->
 nvm ls
 nvm install 8.9.1
 nvm use 8.9.1
 ```
 
-- git
+## 3-2 工程构建安装
 
-## 3-2
+## 4-1 css模块化设计
 
-## 4-2: scss modular ✨✨✨
+## 4-2 css模块化设计
 
-## 4-3: adaptive ✨✨✨✨
+## 4-3 js组件化及自适应mp4
 
 [CSS像素、物理像素、逻辑像素、设备像素比、PPI、Viewport](https://github.com/jawil/blog/issues/21)
 
-- css pixel
+- ✨✨✨✨
+- css pixelP: px
+- dpr
 - meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui"
-- rem & em
-- working principle
+- rem: 相对于html标签来计算大小
+- em: 相对于根标签来计算大小
+- 自适应工作原理
 
 ## 4-4: spa, Hash ✨✨✨✨
 
