@@ -11,49 +11,51 @@
 <body>
   <article id="app"></article>
   <!-- SPA -->
-  <!-- <a href="#" class="api a">a.html</a>
+  <!-- 
+  <a href="#" class="api a">a.html</a>
   <a href="#" class="api b">b.html</a>
   <script>
-    // 注册路由
-    // querySelectorAll: 返回与指定的选择器组匹配的文档中的元素列表
+    /* register route */
+    /* querySelectorAll: 返回与指定的选择器组匹配的文档中的元素列表 */
     document.querySelectorAll('.api').forEach(item => {
       item.addEventListener('click', (e) => {
         e.preventDefault()
-        // textContent: 属性表示一个节点及其后代的文本内容
+        /* textContent: 属性表示一个节点及其后代的文本内容 */
         let lint = item.textContent
         window.history.pushState({name: 'api'}, link, link)
       }, false)
     })
-
-    // 监听路由
+    /* monitor route */
     window.addEventListener('popstate', (e) => {
       console.log({
         location: location.href,
         state: e.state
       })
     })
-  </script> -->
+  </script>
+  -->
 
   <!-- Hash -->
-  <!-- <a class="hash a">#a.html</a>
+  <!-- 
+  <a class="hash a">#a.html</a>
   <a class="hash b">#b.html</a>
   <script>
-      // 注册路由
-      document.querySelectorAll('.hash').forEach(item => {
-        item.addEventListener('click', (e) => {
-          e.preventDefault()
-          let lint = item.textContent
-          location.hash = link
-        }, false)
+    /* register route */
+    document.querySelectorAll('.hash').forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault()
+        let lint = item.textContent
+        location.hash = link
+      }, false)
+    })
+    /* monitor route */
+    window.addEventListener('hashchange', (e) => {
+      console.log({
+        location: location.href,
+        hash: location.hash
       })
-  
-      // 监听路由
-      window.addEventListener('hashchange', (e) => {
-        console.log({
-          location: location.href,
-          hash: location.hash
-        })
-      })
-    </script> -->
+    })
+  </script> 
+  -->
 </body>
 </html>

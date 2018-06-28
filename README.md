@@ -29,11 +29,16 @@ nvm use 8.9.1
 - em: 相对于根标签来计算大小
 - 自适应工作原理
 
-## 4-4: spa, Hash ✨✨✨✨
+## 4-4 spa设计
 
-- spa做了什么，怎么做到的
-
-- Hash
+- ✨✨✨✨
+- back end font end sperate
+- relieve server pressure
+- improve user experience
+- prerender pre-render seo
+- 4-4-1 / 4-4-2 png
+- spa working principle:
+- open action, history control
 
 ## 4-5: 构建工具 ✨
 
