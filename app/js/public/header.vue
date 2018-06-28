@@ -1,4 +1,5 @@
 <template lang="html">
+  <!-- $style: 命名空间 -->
   <div :class="$style.header">
     <span :class="$style.left">
       <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
@@ -19,13 +20,13 @@ export default {
 <style lang="scss" module>
 // module: 局域化
 .header {
+	z-index: 100;
 	position: fixed;
   top: 0;
-  // width: 100%
+  // lett:0, right:0 -> width: 100%
 	left: 0;
   right: 0;
-  // width: 100%
-	z-index: 100;
+  // dpr=2
 	height: 100px;
 	line-height: 100px;
 	font-size: 32px;

@@ -40,14 +40,19 @@ nvm use 8.9.1
 - spa working principle:
 - open action, history control
 
-## 4-5: 构建工具 ✨
+## 4-5: 构建工具
 
-## 5-1, 5-2: abstract design ✨✨✨
+- ✨
 
+## 5-1, 5-2 首页-抽象组件设计
+
+- ✨✨✨
+- iphone 5
 - view-awesome-swiper
 
-## 5-3: header ✨✨✨
+## 5-3 首页-header组件
 
+- ✨✨✨
 - **header.vue**
 
 ## 5-4, 5-5: hslider ✨✨✨

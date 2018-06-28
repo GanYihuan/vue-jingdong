@@ -10,28 +10,30 @@ import '../../css/reset.scss'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'home',
-      component: Home,
+      component: Home
     },
     {
       path: '/money',
       name: 'money',
-      component: Money,
-    }, {
+      component: Money
+    },
+    {
       path: '/ious',
       name: 'ious',
-      component: Ious,
-    }, {
+      component: Ious
+    },
+    {
       path: '/raise',
       name: 'raise',
-      component: Raise,
-    }, {
+      component: Raise
+    },
+    {
       path: '/download',
       name: 'download',
-      component: Download,
+      component: Download
     }
   ]
 })
