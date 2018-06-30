@@ -55,9 +55,10 @@ nvm use 8.9.1
 - ✨✨✨
 - **header.vue**
 
-## 5-4, 5-5: hslider ✨✨✨
+## 5-4 首页-slider组件
 
-- **viewport.js**
+- ✨✨✨
+- **viewport.js** github, webpack.config.js import viewport
 > [hotcss](https://github.com/imochen/hotcss)移动端布局终极解决方案 --- 让移动端布局开发更加容易
 
 ## 5-6, 5-7, 5-8, 5-9: 新手特权 ✨✨✨

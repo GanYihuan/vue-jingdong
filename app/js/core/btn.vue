@@ -1,4 +1,5 @@
 <template lang="html">
+  <!-- 一个根标签 -->
   <div :class="[btnClass,cname]">
     <slot/>
   </div>

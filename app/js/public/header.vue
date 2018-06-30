@@ -1,5 +1,5 @@
 <template lang="html">
-  <!-- $style: 命名空间 -->
+  <!-- module, $style: 命名空间 -->
   <div :class="$style.header">
     <span :class="$style.left">
       <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
@@ -23,7 +23,7 @@ export default {
 	z-index: 100;
 	position: fixed;
   top: 0;
-  // lett:0, right:0 -> width: 100%
+  // position: fixed, lett:0, right:0 -> width: 100%
 	left: 0;
   right: 0;
   // dpr=2

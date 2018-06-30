@@ -1,5 +1,6 @@
 <template lang="html">
   <article class="">
+    <!-- module, $style: 命名空间 -->
     <Slider :items="items" :cname="$style.slider"/>
     <section :class="$style.list">
       <div :class="$style.item" v-for="item in enters" :key="item.img">
@@ -84,10 +85,10 @@ export default {
 }
 .list {
 	@include list(row);
-	background: #fff;
+	justify-content: space-around;
 	padding-top: 40px;
 	padding-bottom: 20px;
-	justify-content: space-around;
+	background: #fff;
 	a {
 		text-decoration: none;
 	}

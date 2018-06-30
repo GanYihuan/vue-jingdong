@@ -24,6 +24,7 @@ module.exports = env => {
     )
   }
   return {
+    // import viewport
     entry: ['./app/js/viewport.js','./app/js/main.js'],
     devServer: {
       contentBase: './dist',
