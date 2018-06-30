@@ -1,5 +1,5 @@
 <template lang="html">
-  <Panel title="新品推荐" :class="$style.panel">
+  <Panel :class="$style.panel" title="新品推荐">
     <section :class="$style.content">
       <div class="arrow">更多尖货 ></div>
       <Slider :options="options" :items="items" cname="product-slider"/>

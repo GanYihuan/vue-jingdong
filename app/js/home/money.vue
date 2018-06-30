@@ -60,6 +60,7 @@ export default {
     // 主轴
 		justify-content: space-around;
     box-sizing: border-box;
+    // 上下分割线
 		&:after {
       display: block;
       // 允许有偏移量
