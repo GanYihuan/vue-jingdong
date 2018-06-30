@@ -61,8 +61,9 @@ nvm use 8.9.1
 - **viewport.js** github, webpack.config.js import viewport
 > [hotcss](https://github.com/imochen/hotcss)移动端布局终极解决方案 --- 让移动端布局开发更加容易
 
-## 5-6, 5-7, 5-8, 5-9: 新手特权 ✨✨✨
+## 5-6, 5-7, 5-8, 5-9: 新手特权
 
+- ✨✨✨
 - **novice.vue**
 - 超出显示...
 

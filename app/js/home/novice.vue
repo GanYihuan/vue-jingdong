@@ -43,12 +43,12 @@ export default {
 	.content {
 		@include list(row);
 		.item {
-			width: 50%;
 			box-sizing: border-box;
+			width: 50%;
 			&:first-child {
 				padding: 32px 20px;
-				text-align: center;
 				border-right: 1px solid #ddd;
+				text-align: center;
 				img {
 					margin: 20px auto 0;
 					width: 132px;
@@ -86,7 +86,6 @@ export default {
 						text-overflow: ellipsis;
 						overflow: hidden;
             white-space: nowrap;
-            // 超出显示...
 					}
 					img {
 						float: right;

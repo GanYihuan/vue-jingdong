@@ -2,6 +2,7 @@
   <Panel title="理财精选" :class="$style.panel">
     <section :class="$style.content">
       <!-- dl: 使用它作为选择器更优化 -->
+      <!-- 线不考虑，因为可以使用伪元素解决 -->
       <dl :class="$style.item" v-for="item in items" :key="item.title">
         <dt>{{ item.title }}<span>{{ item.sub }}</span></dt>
         <dd>{{ item.rate }}</dd>
@@ -55,9 +56,10 @@ export default {
 .panel {
 	@include panel;
 	.content {
-		@include flex(row);
+    @include flex(row);
+    // 主轴
 		justify-content: space-around;
-		box-sizing: border-box;
+    box-sizing: border-box;
 		&:after {
       display: block;
       // 允许有偏移量
@@ -70,9 +72,11 @@ export default {
 			content: ' ';
 		}
 		.item {
-      // 为下面position: absolute;准备
-			position: relative;
-			box-sizing: border-box;
+      // 为下面position: absolute准备
+      position: relative;
+      // 为了width: 50%
+      box-sizing: border-box;
+      padding: 34px 16px;
       width: 50%;
       // 断线
 			&:after {
@@ -86,13 +90,12 @@ export default {
 				height: 136px;
 				content: ' ';
       }
-      // 后面的断线不需要
+      // 后面的断线不需要, 2n偶数
 			&:nth-child(2n) {
 				&:after {
 					display: none;
 				}
 			}
-			padding: 34px 16px;
 			dt {
 				line-height: 42px;
 				font-size: 30px;
@@ -108,23 +111,25 @@ export default {
 			}
 			dd {
 				&:nth-child(2) {
-					overflow: hidden;
-					height: 58px;
+          height: 58px;
 					line-height: 58px;
-					text-overflow: ellipsis;
 					font-weight: 700;
-					font-size: 44px;
-					white-space: nowrap;
+          font-size: 44px;
 					color: #ff5155;
+          // 显示...
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
 				}
 				&:nth-child(3) {
-					overflow: hidden;
           height: 34px;
 					line-height: 34px;
-					text-overflow: ellipsis;
-					font-size: 24px;
-					white-space: nowrap;
+          font-size: 24px;
 					color: #999;
+          // 显示...
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
 				}
 			}
 		}
