@@ -1,4 +1,5 @@
 @import "./layout.scss";
+
 @mixin btn($size:14px, $color:#fff, $bgcolor:#F04752, $padding:5px, $radius:5px) {
   display: inline-block;
   border: 1px solid $bgcolor;
@@ -16,20 +17,21 @@
 }
 
 @mixin panel($bgcolor:#fff, $padding:0, $margin:20px 0, $height:112px, $txtPadding:0 32px, $color:#333, $fontSize:32px) {
-  background: $bgcolor;
   margin: $margin;
   padding: $padding;
+  background: $bgcolor;
+  
   >h4 {
     padding: $txtPadding;
     height: $height;
     line-height: $height;
     text-align: center;
     font-size: $fontSize;
-    // 超出显示...
+    color: $color;
+    /* 超出显示... */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    // 超出显示...
-    color: $color;
+    /* 超出显示... */
   }
 }
