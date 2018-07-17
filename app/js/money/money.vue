@@ -12,6 +12,7 @@
 
 <script>
 import Panel from '../core/panel.vue'
+
 export default {
 	components: {
 		Panel
@@ -51,6 +52,7 @@ export default {
 
 <style lang="scss" module>
 @import '../../css/element.scss';
+
 .panel {
 	@include panel;
 	.content {
@@ -58,14 +60,14 @@ export default {
 		justify-content: space-around;
 		box-sizing: border-box;
 		&:after {
-			content: ' ';
-			display: block;
-			width: 100%;
-			height: 0px;
-			box-sizing: border-box;
-			border-bottom: 1px solid #ddd;
+      display: block;
 			position: relative;
 			top: -208px;
+			box-sizing: border-box;
+			border-bottom: 1px solid #ddd;
+			width: 100%;
+			height: 0px;
+			content: ' ';
 		}
 		.item {
 			position: relative;

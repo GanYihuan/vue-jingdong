@@ -22,6 +22,7 @@ import Money from './money.vue'
 import Adb from './adb.vue'
 import Finance from './finance.vue'
 import Adc from './adc.vue'
+
 export default {
 	components: {
 		Heador,

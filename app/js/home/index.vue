@@ -22,6 +22,7 @@ import Borrow from './borrow.vue'
 import Money from './money.vue'
 import Product from './product.vue'
 import Life from './life.vue'
+
 export default {
 	components: {
 		Heador,

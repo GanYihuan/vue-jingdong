@@ -99,6 +99,12 @@ overflow: hidden;
 
 - **navbar.vue**
 
-## 6-1: money/mslider, ada, money
+## 6-1 理财
 
-## 6-2: finance
+- **ada.vue**
+- **adb.vue**
+- **adc.vue**
+- **finance.vue**
+- **index.vue**
+- **money.vue**
+- **mslider.vue**
