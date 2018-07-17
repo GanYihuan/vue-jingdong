@@ -77,10 +77,11 @@ overflow: hidden;
 /* 超出显示... */
 ```
 
-## 5-10, 5-11, 5-12: borrow
+## 5-10 首页-极速借贷-理财精选
 
 - **borrow.vue**
-- css伪元素
+- **money.vue**
+- css伪元素解决线的问题
 
 ## 5-13: product
 
