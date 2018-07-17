@@ -10,6 +10,7 @@
 <script>
 import Panel from '../core/panel.vue'
 import Slider from '../core/slider.vue'
+
 export default {
 	components: {
 		Panel,
@@ -72,6 +73,7 @@ export default {
 
 <style lang="scss" module>
 @import '../../css/element.scss';
+
 .panel {
 	@include panel;
 	.content {
