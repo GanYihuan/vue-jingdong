@@ -1,5 +1,5 @@
 <template lang="html">
-  <!-- 一个根标签 -->
+  <!-- 只能有一个根标签 -->
   <div :class="[btnClass,cname]">
     <slot/>
   </div>
@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss">
 @import '../../css/element.scss';
+
 .btn {
 	@include btn;
 }

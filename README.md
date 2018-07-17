@@ -44,8 +44,13 @@ nvm use 8.9.1
 
 ## 5-1, 5-2 首页-抽象组件设计
 
-- iphone 5
-- view-awesome-swiper
+```node
+npm i view-awesome-swiper -S
+```
+
+- **core/btn.vue**
+- **core/panel.vue**
+- **core/slider.vue**
 
 ## 5-3 首页-header组件
 
