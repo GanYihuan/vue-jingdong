@@ -16,6 +16,7 @@ import Navbar from '../public/navbar.vue'
 import Slider from './islider.vue'
 import Welfare from './welfare.vue'
 import Service from './service.vue'
+
 export default {
 	components: {
 		Heador,

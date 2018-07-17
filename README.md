@@ -108,3 +108,10 @@ overflow: hidden;
 - **index.vue**
 - **money.vue**
 - **mslider.vue**
+
+## 7-1 白条
+
+- **index.vue**
+- **islider.vue**
+- **service.vue**
+- **welfare.vue**

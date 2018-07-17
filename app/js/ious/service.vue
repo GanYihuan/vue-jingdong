@@ -2,7 +2,7 @@
   <Panel title="更多服务" :class="$style.panel">
     <section :class="$style.content">
       <div :class="$style.item" v-for="item in items" :key="item.img">
-        <img :src="item.img" alt="">
+        <img :src="item.img" alt=""/>
         <p>{{ item.text }}</p>
       </div>
     </section>
@@ -11,6 +11,7 @@
 
 <script>
 import Panel from '../core/panel.vue'
+
 export default {
 	components: {
 		Panel
@@ -66,23 +67,24 @@ export default {
 
 <style lang="scss" module>
 @import '../../css/element.scss';
+
 .panel {
 	@include panel;
 	.content {
 		@include flex(row);
 		.item {
+			margin-bottom: 40px;
 			width: 160px;
 			height: 144px;
 			text-align: center;
-			margin-bottom: 40px;
 			img {
 				width: 90px;
 				height: 90px;
 			}
 			p {
+				margin-top: 12px;
 				font-size: 26px;
 				color: #666;
-				margin-top: 12px;
 			}
 		}
 	}
