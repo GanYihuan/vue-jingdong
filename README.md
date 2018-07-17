@@ -83,13 +83,21 @@ overflow: hidden;
 - **money.vue**
 - css伪元素解决线的问题
 
-## 5-13: product
+## 5-13 首页-新品推荐
 
-## 5-14: life
+- **product.vue**
 
-## 5-15: footer
+## 5-14 首页-生活服务
 
-## 5-16: navbar
+- **life.vue**
+
+## 5-15 首页-公司信息
+
+- **footer.vue**
+
+## 5-16 首页-导航条
+
+- **navbar.vue**
 
 ## 6-1: money/mslider, ada, money
 
