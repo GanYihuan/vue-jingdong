@@ -58,13 +58,24 @@ npm i view-awesome-swiper -S
 
 ## 5-4 首页-slider组件
 
-- **viewport.js** github, webpack.config.js import viewport
+- **viewport.js**, **webpack.config.js** import viewport
 > [hotcss](https://github.com/imochen/hotcss)移动端布局终极解决方案 --- 让移动端布局开发更加容易
+
+- **hslider.vue**
 
 ## 5-6, 5-7, 5-8, 5-9: 新手特权
 
 - **novice.vue**
-- 超出显示...
+
+```css
+/* 从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */
+box-sizing: border-box;
+/* 超出显示...(two) */
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+/* 超出显示... */
+```
 
 ## 5-10, 5-11, 5-12: borrow
 

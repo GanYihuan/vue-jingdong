@@ -10,6 +10,7 @@
 
 <script>
 import btn from '../core/btn.vue'
+
 export default {
 	components: {
 		btn
@@ -18,15 +19,15 @@ export default {
 </script>
 
 <style lang="scss" module>
-// module: 局域化
+/* module: 局域化 */
 .header {
 	z-index: 100;
 	position: fixed;
-  top: 0;
-  // position: fixed, lett:0, right:0 -> width: 100%
+	top: 0;
+	// position: fixed, lett:0, right:0 -> width: 100%
 	left: 0;
-  right: 0;
-  // dpr=2
+	right: 0;
+	/* dpr=2, 设计稿100px, 手机50px */
 	height: 100px;
 	line-height: 100px;
 	font-size: 32px;
@@ -35,7 +36,7 @@ export default {
 		center no-repeat;
 	background-size: auto 50%;
 	.left {
-    margin: 17px 0 0 18px;
+		margin: 17px 0 0 18px;
 		height: 30px;
 		line-height: 30px;
 		font-size: 28px;

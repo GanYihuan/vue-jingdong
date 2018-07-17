@@ -5,7 +5,7 @@
     <section :class="$style.list">
       <div :class="$style.item" v-for="item in enters" :key="item.img">
         <router-link :to="{name: item.href}">
-          <img :src="item.img" :alt="item.title">
+          <img :src="item.img" :alt="item.title"/>
           <h4>{{ item.title }}</h4>
         </router-link>
       </div>
@@ -15,6 +15,7 @@
 
 <script>
 import Slider from '../core/slider.vue'
+
 export default {
 	components: {
 		Slider
@@ -23,7 +24,7 @@ export default {
 		return {
 			items: [
 				{
-					href: 'home', 
+					href: 'home',
 					src:
 						'//img12.360buyimg.com/jrpmobile/jfs/t13744/11/2508939408/43213/58bfe502/5a421ff3N52d0a474.jpg?width=750&height=320'
 				},
@@ -77,6 +78,7 @@ export default {
 
 <style lang="scss" module>
 @import '../../css/element.scss';
+
 .slider {
 	margin-top: 120px;
 	img {
@@ -84,6 +86,7 @@ export default {
 	}
 }
 .list {
+  // flex
 	@include list(row);
 	justify-content: space-around;
 	padding-top: 40px;
@@ -100,8 +103,8 @@ export default {
 			height: 90px;
 		}
 		h4 {
+      margin-top: 12px;
 			font-size: 26px;
-			margin-top: 12px;
 			color: #666;
 		}
 	}
