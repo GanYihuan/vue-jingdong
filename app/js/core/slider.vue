@@ -25,7 +25,7 @@ export default {
 			type: String,
 			default: ''
 		},
-    /* 官方指定参数 */
+		/* 官方指定参数 */
 		options: {
 			type: Object,
 			/* 任何对象都要返回 */

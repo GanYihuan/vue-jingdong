@@ -60,7 +60,7 @@ export default {
 		justify-content: space-around;
 		box-sizing: border-box;
 		&:after {
-      display: block;
+			display: block;
 			position: relative;
 			top: -208px;
 			box-sizing: border-box;

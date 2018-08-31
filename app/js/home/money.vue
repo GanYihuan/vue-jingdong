@@ -58,13 +58,13 @@ export default {
 .panel {
 	@include panel;
 	.content {
-    @include flex(row);
+		@include flex(row);
 		justify-content: space-around;
-    box-sizing: border-box;
-    /* 上下断线 */
+		box-sizing: border-box;
+		/* 上下断线 */
 		&:after {
-      display: block;
-      /* 允许有偏移量 */
+			display: block;
+			/* 允许有偏移量 */
 			position: relative;
 			top: -208px;
 			box-sizing: border-box;
@@ -74,12 +74,12 @@ export default {
 			content: ' ';
 		}
 		.item {
-      /* 为下面position: absolute准备 */
-      position: relative;
-      box-sizing: border-box;
-      padding: 34px 16px;
-      width: 50%;
-      /* 中间断线 */
+			/* 为下面position: absolute准备 */
+			position: relative;
+			box-sizing: border-box;
+			padding: 34px 16px;
+			width: 50%;
+			/* 中间断线 */
 			&:after {
 				display: block;
 				position: absolute;
@@ -90,11 +90,11 @@ export default {
 				width: 1px;
 				height: 136px;
 				content: ' ';
-      }
-      /* 后面的断线不需要, 2n偶数 */
-      /* nth-child非数组下标 */ 
+			}
+			/* 后面的断线不需要, 2n偶数 */
+			/* nth-child非数组下标 */
 			&:nth-child(2n) {
-        /* 断线 */
+				/* 断线 */
 				&:after {
 					display: none;
 				}
@@ -114,27 +114,27 @@ export default {
 			}
 			dd {
 				&:nth-child(2) {
-          height: 58px;
+					height: 58px;
 					line-height: 58px;
 					font-weight: 700;
-          font-size: 44px;
+					font-size: 44px;
 					color: #ff5155;
-          /* 显示...(two) */
+					/* 显示...(two) */
 					text-overflow: ellipsis;
-          white-space: nowrap;
+					white-space: nowrap;
 					overflow: hidden;
-          /* 显示...(two) */
+					/* 显示...(two) */
 				}
 				&:nth-child(3) {
-          height: 34px;
+					height: 34px;
 					line-height: 34px;
-          font-size: 24px;
+					font-size: 24px;
 					color: #999;
-          /* 显示...(two) */
+					/* 显示...(two) */
 					overflow: hidden;
 					text-overflow: ellipsis;
-          white-space: nowrap;
-          /* 显示...(two) */
+					white-space: nowrap;
+					/* 显示...(two) */
 				}
 			}
 		}

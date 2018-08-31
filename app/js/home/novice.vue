@@ -45,7 +45,7 @@ export default {
 	.content {
 		@include list(row);
 		.item {
-      /* 从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */ 
+			/* 从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */
 			box-sizing: border-box;
 			width: 50%;
 			&:first-child {
@@ -87,9 +87,9 @@ export default {
 						text-align: left;
 						// 超出显示...(two)
 						text-overflow: ellipsis;
-            white-space: nowrap;
+						white-space: nowrap;
 						overflow: hidden;
-            // 超出显示...
+						// 超出显示...
 					}
 					img {
 						float: right;

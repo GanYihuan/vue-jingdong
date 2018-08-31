@@ -52,17 +52,17 @@ export default {
 		.item {
 			@include flex(row);
 			align-items: center;
-      height: 140px;
-      /* 断线 */ 
+			height: 140px;
+			/* 断线 */
 			&:after {
-        box-sizing: border-box;
+				box-sizing: border-box;
 				margin-left: 150px;
 				border-bottom: 1px solid #ddd;
 				width: 100%;
 				height: 0;
 				content: ' ';
-      }
-      /* 断线消失 */ 
+			}
+			/* 断线消失 */
 			&:last-child:after {
 				border-color: #fff;
 			}
@@ -78,18 +78,18 @@ export default {
 				font-size: 32px;
 				color: #333;
 				p {
-          font-size: 24px;
+					font-size: 24px;
 					line-height: 1.1;
-          color: #ff3232;
-          /* 显示...(two) */ 
+					color: #ff3232;
+					/* 显示...(two) */
 					text-overflow: ellipsis;
 					white-space: nowrap;
-          overflow: hidden;
-          /* 显示...(two) */ 
+					overflow: hidden;
+					/* 显示...(two) */
 				}
 			}
 			> em {
-        font-size: 28px;
+				font-size: 28px;
 				color: #ff801a;
 			}
 		}

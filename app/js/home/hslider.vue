@@ -86,7 +86,7 @@ export default {
 	}
 }
 .list {
-  // flex
+	// flex
 	@include list(row);
 	justify-content: space-around;
 	padding-top: 40px;
@@ -103,7 +103,7 @@ export default {
 			height: 90px;
 		}
 		h4 {
-      margin-top: 12px;
+			margin-top: 12px;
 			font-size: 26px;
 			color: #666;
 		}

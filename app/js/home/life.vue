@@ -53,14 +53,14 @@ export default {
 				height: 90px;
 			}
 			p {
-        margin-top: 12px;
+				margin-top: 12px;
 				font-size: 26px;
-        color: #666;
-        /* 显示...(two) */
+				color: #666;
+				/* 显示...(two) */
 				text-overflow: ellipsis;
 				white-space: nowrap;
-        overflow: hidden;
-        /* 显示...(two) */
+				overflow: hidden;
+				/* 显示...(two) */
 				&:nth-child(3) {
 					color: #ff801a;
 				}

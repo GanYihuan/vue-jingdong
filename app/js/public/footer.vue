@@ -77,20 +77,20 @@ export default {
 						height: 90px;
 					}
 					p {
-            display: block;
+						display: block;
 						margin-top: 12px;
 						font-size: 26px;
 						text-align: center;
-            color: #999;
-            /* 显示...(two) */
+						color: #999;
+						/* 显示...(two) */
 						text-overflow: ellipsis;
 						white-space: nowrap;
-            overflow: hidden;
-            /* 显示...(two) */
+						overflow: hidden;
+						/* 显示...(two) */
 					}
 				}
-      }
-      /* 非数组下标, 大于第三个开始 */
+			}
+			/* 非数组下标, 大于第三个开始 */
 			&:nth-child(n + 3) {
 				border-top: 1px solid #ddd;
 				padding: 24px 0;

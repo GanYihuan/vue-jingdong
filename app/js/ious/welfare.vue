@@ -54,7 +54,7 @@ export default {
 			height: 140px;
 			align-items: center;
 			&:after {
-        box-sizing: border-box;
+				box-sizing: border-box;
 				margin-left: 150px;
 				border-bottom: 1px solid #ddd;
 				height: 0;
@@ -77,13 +77,13 @@ export default {
 				color: #333;
 				p {
 					line-height: 1.1;
-          font-size: 24px;
-          color: #999;
-          /* 显示...(two) */ 
+					font-size: 24px;
+					color: #999;
+					/* 显示...(two) */
 					white-space: nowrap;
 					text-overflow: ellipsis;
-          overflow: hidden;
-          /* 显示...(two) */
+					overflow: hidden;
+					/* 显示...(two) */
 				}
 			}
 			> em {

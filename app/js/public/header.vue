@@ -24,9 +24,9 @@ export default {
 	z-index: 100;
 	position: fixed;
 	top: 0;
-	// position: fixed, lett:0, right:0 -> width: 100%
-	left: 0;
+	// position: fixed, left:0, right:0 -> width: 100%
 	right: 0;
+	left: 0;
 	/* dpr=2, 设计稿100px, 手机50px */
 	height: 100px;
 	line-height: 100px;
