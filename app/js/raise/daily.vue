@@ -33,10 +33,10 @@ export default {
 			position: absolute;
 			top: -112px;
 			right: 20px;
-			font-size: 28px;
-			color: #999;
 			height: 112px;
 			line-height: 112px;
+			font-size: 28px;
+			color: #999;
 		}
 	}
 }

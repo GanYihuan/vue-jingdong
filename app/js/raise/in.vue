@@ -2,7 +2,7 @@
   <Panel title="In货推荐" :class="$style.panel">
     <section :class="$style.content">
       <div :class="$style.item" v-for="item in items" :key="item.catory">
-        <img :src="item.catory" alt="">
+        <img :src="item.catory" alt=""/>
         <section :class="$style.list">
           <div :class="$style.product" v-for="product in item.list" :key="product.img">
             <img :src="product.img" alt="">
@@ -113,16 +113,16 @@ export default {
 			.list {
 				@include flex(row);
 				.product {
+					position: relative;
+					box-sizing: border-box;
 					width: 50%;
 					height: 396px;
-					box-sizing: border-box;
-					background: rgba(0, 0, 0, 0.02);
 					text-align: center;
-					position: relative;
+					background: rgba(0, 0, 0, 0.02);
 					img {
+						margin: 44px auto 20px;
 						width: 180px;
 						height: 180px;
-						margin: 44px auto 20px;
 					}
 					.title {
 						font-family: PingFangSC-Medium;
@@ -130,18 +130,18 @@ export default {
 						color: #444;
 					}
 					.price {
-						font-family: PingFangSC-Semibold;
-						font-size: 20px;
-						color: #999;
-						height: 48px;
+            height: 48px;
 						line-height: 48px;
+						font-family: PingFangSC-Semibold;
+            font-size: 20px;
+						color: #999;
 						em {
+							margin-right: 4px;
 							font-size: 36px;
 							color: #ff3232;
-							margin-right: 4px;
 							&:before {
+                font-size: 28px;
 								content: '￥';
-								font-size: 28px;
 							}
 						}
 					}
@@ -149,16 +149,17 @@ export default {
 						@include flex(row);
 						align-items: center;
 						justify-content: space-around;
+						margin-top: 16px;
 						padding: 0 20px;
 						height: 30px;
 						line-height: 30px;
-						margin-top: 16px;
 						.wrapper {
+							border-radius: 22px;
 							width: 144px;
 							height: 10px;
 							background: #f6e6e6;
-							border-radius: 22px;
 							.inner {
+                border-radius: 22px;
 								width: 40%;
 								max-width: 100%;
 								height: 10px;
@@ -167,7 +168,6 @@ export default {
 									#f55 1%,
 									#ff9c31 100%
 								);
-								border-radius: 22px;
 							}
 						}
 						p {
@@ -179,11 +179,11 @@ export default {
 						position: absolute;
 						left: 0;
 						top: 0;
+						padding: 4px 8px;
+						text-align: center;
 						font-family: PingFangSC-Medium;
 						font-size: 20px;
 						color: #ff0000;
-						text-align: center;
-						padding: 4px 8px;
 						background-image: linear-gradient(-35deg, #c1c1c1 0, #acacac 100%);
 					}
 				}

@@ -24,8 +24,8 @@ export default {
 	@include panel;
 	.content {
 		@include flex(row);
-		position: relative;
 		justify-content: space-around;
+		position: relative;
 		padding-bottom: 60px;
 		img {
 			width: 33.333333%;
@@ -35,10 +35,10 @@ export default {
 			position: absolute;
 			right: 20px;
 			top: -112px;
-			font-size: 28px;
-			color: #999;
 			height: 112px;
 			line-height: 112px;
+			font-size: 28px;
+			color: #999;
 		}
 	}
 }

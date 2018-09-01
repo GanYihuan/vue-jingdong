@@ -1,5 +1,5 @@
 <template lang="html">
-  <!-- module, $style: 命名空间 -->
+  <!-- css 局域化, $style module: 命名空间 -->
   <div :class="$style.header">
     <span :class="$style.left">
       <em>注册</em>&nbsp;|&nbsp;<em>登录</em>
@@ -27,7 +27,7 @@ export default {
 	// position: fixed, left:0, right:0 -> width: 100%
 	right: 0;
 	left: 0;
-	/* dpr=2, 设计稿100px, 手机50px */
+	/* dpr=2, 手机网页显示 50px, 设计稿写 50*2=100px */
 	height: 100px;
 	line-height: 100px;
 	font-size: 32px;
@@ -36,7 +36,8 @@ export default {
 		center no-repeat;
 	background-size: auto 50%;
 	.left {
-		margin: 17px 0 0 18px;
+    margin: 17px 0 0 18px;
+    /* 文字垂直居中 */
 		height: 30px;
 		line-height: 30px;
 		font-size: 28px;
@@ -47,7 +48,8 @@ export default {
 		border-radius: 4px;
 		border-width: 0;
 		padding: 0;
-		min-width: 120px;
+    min-width: 120px;
+    /* 文字垂直居中 */
 		height: 56px;
 		line-height: 56px;
 		font-size: 24px;

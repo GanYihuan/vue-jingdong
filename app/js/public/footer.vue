@@ -90,7 +90,7 @@ export default {
 					}
 				}
 			}
-			/* 非数组下标, 大于第三个开始 */
+			/* 非数组下标, 第三个开始 */
 			&:nth-child(n + 3) {
 				border-top: 1px solid #ddd;
 				padding: 24px 0;

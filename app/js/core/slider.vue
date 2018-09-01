@@ -1,7 +1,7 @@
 <template lang="html">
   <section :class="cname">
     <swiper :options="options" :not-next-tick="options.notNextTick">
-      <swiper-slide v-for="item in items" :key="item.href">
+      <swiper-slide v-for="(item, index) in items" :key="item.href">
         <router-link :to="{name: item.href}">
           <img :src="item.src" alt=""/>
         </router-link>
@@ -25,7 +25,12 @@ export default {
 			type: String,
 			default: ''
 		},
-		/* 官方指定参数 */
+		items: {
+			type: Array,
+			default() {
+				return []
+			}
+		},
 		options: {
 			type: Object,
 			/* 任何对象都要返回 */
@@ -37,21 +42,16 @@ export default {
 						el: '.swiper-pagination'
 					},
 					/* 
+          下一个点击事件
           notNextTick 是一个组件自有属性，
           如果notNextTick设置为true，
           组件则不会通过NextTick来实例化swiper，
           也就意味着你可以在第一时间获取到swiper对象，
           假如你需要刚加载就使用获取swiper对象来做什么事，
-          那么这个属性一定要是true 
+          那么这个属性一定要是true
           */
 					notNextTick: false
 				}
-			}
-		},
-		items: {
-			type: Array,
-			default() {
-				return []
 			}
 		}
 	}

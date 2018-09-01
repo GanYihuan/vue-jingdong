@@ -33,15 +33,15 @@ body {
 		@include flex;
 		justify-content: center;
 		align-items: center;
-		height: 1136px;
 		width: 100%;
+		height: 1136px;
 		> div {
-			background: url(https://img12.360buyimg.com/jrpmobile/jfs/t8956/285/1249806938/50853/8cd3c8f0/59b65f36N05367075.png?)
-				center center no-repeat;
+			margin-top: -400px;
 			width: 600px;
 			height: 800px;
+			background: url(https://img12.360buyimg.com/jrpmobile/jfs/t8956/285/1249806938/50853/8cd3c8f0/59b65f36N05367075.png?)
+				center center no-repeat;
 			background-size: 100% auto;
-			margin-top: -400px;
 		}
 		> p {
 			@include btn(
@@ -51,13 +51,13 @@ body {
 				$padding: 5px,
 				$radius: 5px
 			);
-			height: 100px;
-			line-height: 100px;
-			width: 471px;
-			background-image: linear-gradient(270deg, #f55c33 0, #ee2d1b 75%);
-			box-shadow: 0 12px 32px 0 rgba(255, 159, 135, 0.6);
 			position: fixed;
 			bottom: 130px;
+			box-shadow: 0 12px 32px 0 rgba(255, 159, 135, 0.6);
+			width: 471px;
+			height: 100px;
+			line-height: 100px;
+			background-image: linear-gradient(270deg, #f55c33 0, #ee2d1b 75%);
 		}
 		span {
 			position: fixed;

@@ -76,6 +76,7 @@ export default {
 			ul {
 				width: 100%;
 				li {
+          /* 从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */
 					box-sizing: border-box;
 					padding: 32px 28px;
 					height: 144px;

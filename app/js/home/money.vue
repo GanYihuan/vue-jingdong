@@ -61,7 +61,7 @@ export default {
 		@include flex(row);
 		justify-content: space-around;
 		box-sizing: border-box;
-		/* 上下断线 */
+		/* 横线 */
 		&:after {
 			display: block;
 			/* 允许有偏移量 */
@@ -70,7 +70,7 @@ export default {
 			box-sizing: border-box;
 			border-bottom: 1px solid #ddd;
 			width: 100%;
-			height: 0px;
+			height: 0;
 			content: ' ';
 		}
 		.item {
@@ -79,7 +79,7 @@ export default {
 			box-sizing: border-box;
 			padding: 34px 16px;
 			width: 50%;
-			/* 中间断线 */
+			/* 竖线 */
 			&:after {
 				display: block;
 				position: absolute;
@@ -114,8 +114,10 @@ export default {
 			}
 			dd {
 				&:nth-child(2) {
+					/* 文字垂直居中 */
 					height: 58px;
 					line-height: 58px;
+					/* 文字垂直居中 */
 					font-weight: 700;
 					font-size: 44px;
 					color: #ff5155;
@@ -126,8 +128,10 @@ export default {
 					/* 显示...(two) */
 				}
 				&:nth-child(3) {
+					/* 文字垂直居中 */
 					height: 34px;
 					line-height: 34px;
+					/* 文字垂直居中 */
 					font-size: 24px;
 					color: #999;
 					/* 显示...(two) */

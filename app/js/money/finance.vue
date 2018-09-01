@@ -53,7 +53,7 @@ export default {
 			@include flex(row);
 			align-items: center;
 			height: 140px;
-			/* 断线 */
+			/* 横线 */
 			&:after {
 				box-sizing: border-box;
 				margin-left: 150px;

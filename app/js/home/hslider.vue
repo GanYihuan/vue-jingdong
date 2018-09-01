@@ -1,9 +1,8 @@
 <template lang="html">
   <article class="">
-    <!-- module, $style: 命名空间 -->
     <Slider :items="items" :cname="$style.slider"/>
     <section :class="$style.list">
-      <div :class="$style.item" v-for="item in enters" :key="item.img">
+      <div :class="$style.item" v-for="(item, index) in enters" :key="item.img">
         <router-link :to="{name: item.href}">
           <img :src="item.img" :alt="item.title"/>
           <h4>{{ item.title }}</h4>
