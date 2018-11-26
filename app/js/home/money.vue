@@ -63,18 +63,18 @@ export default {
 		box-sizing: border-box;
 		/* 横线 */
 		&:after {
+			box-sizing: border-box;
 			display: block;
 			/* 允许有偏移量 */
 			position: relative;
 			top: -208px;
-			box-sizing: border-box;
 			border-bottom: 1px solid #ddd;
 			width: 100%;
 			height: 0;
 			content: ' ';
 		}
 		.item {
-			/* 为下面position: absolute准备 */
+			/* 为下面 position: absolute 准备 */
 			position: relative;
 			box-sizing: border-box;
 			padding: 34px 16px;
@@ -91,8 +91,8 @@ export default {
 				height: 136px;
 				content: ' ';
 			}
-			/* 后面的断线不需要, 2n偶数 */
-			/* nth-child非数组下标 */
+			/* 后面的断线不需要, 2n 偶数 */
+			/* nth-child 非数组下标 */
 			&:nth-child(2n) {
 				/* 断线 */
 				&:after {
