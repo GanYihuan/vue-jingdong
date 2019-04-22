@@ -1,5 +1,7 @@
 <template lang="html">
-  <Panel title="金融头条" :class="$style.panel">
+  <Panel
+    :class="$style.panel"
+    title="金融头条">
     <section :class="$style.content">
       <swiper :options="options">
         <swiper-slide>百万白条券免费送，速来领取！！ <em>></em> </swiper-slide>
@@ -14,20 +16,20 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import Panel from '../core/panel.vue'
 
 export default {
-	components: {
-		Panel,
-		swiper,
-		swiperSlide
-	},
-	data() {
-		return {
-			options: {
-				autoplay: true,
-				loop: true,
-				direction: 'vertical'
-			}
-		}
-	}
+  components: {
+    Panel,
+    swiper,
+    swiperSlide
+  },
+  data() {
+    return {
+      options: {
+        autoplay: true,
+        loop: true,
+        direction: 'vertical'
+      }
+    }
+  }
 }
 </script>
 

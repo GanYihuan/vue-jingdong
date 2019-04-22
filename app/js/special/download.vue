@@ -1,5 +1,7 @@
 <template lang="html">
-  <Panel title="下载APP" :class="$style.panel">
+  <Panel
+    :class="$style.panel"
+    title="下载APP">
     <section :class="$style.content">
       <div class=""/>
       <p>立即下载</p>
@@ -11,9 +13,9 @@
 <script>
 import Panel from '../core/panel.vue'
 export default {
-	components: {
-		Panel
-	}
+  components: {
+    Panel
+  }
 }
 </script>
 

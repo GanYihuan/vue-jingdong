@@ -24,16 +24,16 @@ import Product from './product.vue'
 import Life from './life.vue'
 
 export default {
-	components: {
-		Heador,
-		Slider,
-		Novice,
-		Borrow,
-		Money,
-		Product,
-		Life,
-		Footor,
-		Navbar
-	}
+  components: {
+    Heador,
+    Slider,
+    Novice,
+    Borrow,
+    Money,
+    Product,
+    Life,
+    Footor,
+    Navbar
+  }
 }
 </script>

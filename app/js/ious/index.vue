@@ -18,13 +18,13 @@ import Welfare from './welfare.vue'
 import Service from './service.vue'
 
 export default {
-	components: {
-		Heador,
-		Slider,
-		Welfare,
-		Service,
-		Footor,
-		Navbar
-	}
+  components: {
+    Heador,
+    Slider,
+    Welfare,
+    Service,
+    Footor,
+    Navbar
+  }
 }
 </script>

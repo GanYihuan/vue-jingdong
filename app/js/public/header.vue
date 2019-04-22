@@ -12,9 +12,9 @@
 import btn from '../core/btn.vue'
 
 export default {
-	components: {
-		btn
-	}
+  components: {
+    btn
+  }
 }
 </script>
 

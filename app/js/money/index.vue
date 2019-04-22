@@ -24,17 +24,17 @@ import Finance from './finance.vue'
 import Adc from './adc.vue'
 
 export default {
-	components: {
-		Heador,
-		Slider,
-		Ada,
-		Money,
-		Adb,
-		Finance,
-		Adc,
-		Footor,
-		Navbar
-	}
+  components: {
+    Heador,
+    Slider,
+    Ada,
+    Money,
+    Adb,
+    Finance,
+    Adc,
+    Footor,
+    Navbar
+  }
 }
 </script>
 

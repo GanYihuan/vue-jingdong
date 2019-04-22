@@ -19,15 +19,15 @@ import Daily from './daily.vue'
 import In from './in.vue'
 import More from './more.vue'
 export default {
-	components: {
-		Heador,
-		Slider,
-		Daily,
-		In,
-		More,
-		Footor,
-		Navbar
-	}
+  components: {
+    Heador,
+    Slider,
+    Daily,
+    In,
+    More,
+    Footor,
+    Navbar
+  }
 }
 </script>
 
