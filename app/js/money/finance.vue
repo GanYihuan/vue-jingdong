@@ -39,7 +39,6 @@
 
 <script>
 import Panel from '../core/panel.vue'
-
 export default {
   components: {
     Panel
@@ -63,7 +62,10 @@ export default {
 			height: 140px;
 			/* 横线 */
 			&:after {
-				box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        top: 10px;
 				margin-left: 150px;
 				border-bottom: 1px solid #ddd;
 				width: 100%;
@@ -86,8 +88,8 @@ export default {
 				font-size: 32px;
 				color: #333;
 				p {
-					font-size: 24px;
 					line-height: 1.1;
+					font-size: 24px;
 					color: #ff3232;
 					/* 显示...(two) */
 					text-overflow: ellipsis;
