@@ -43,10 +43,14 @@ export default {
       type: Object,
       default() {
         return {
-          autoplay: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false // 用户操作swiper之后，是否禁止autoplay。默认为true：停止。
+          },
           loop: true,
           pagination: {
-            el: '.swiper-pagination'
+            el: '.swiper-pagination',
+            clickable: true
           },
           /*
           下一个点击事件
@@ -58,6 +62,10 @@ export default {
           那么这个属性一定要是 true
           */
           notNextTick: false
+          // direction: 'vertical' // Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)。
+          // slidesPerView: 2, // 设置slider容器能够同时显示的slides数量
+          // spaceBetween: 30, // slide之间的距离（单位px）
+          // freeMode: true // 默认为false，普通模式：slide滑动时只滑动一格，并自动贴合wrapper，设置为true则变为free模式，slide会根据惯性滑动且不会贴合
         }
       }
     }
