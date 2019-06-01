@@ -34,7 +34,6 @@
 
 <script>
 import Panel from '../core/panel.vue'
-
 export default {
   components: {
     Panel
@@ -56,7 +55,7 @@ export default {
 			/* 从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */
 			box-sizing: border-box;
 			width: 50%;
-			&:first-child {
+			&:nth-child(1) {
 				padding: 32px 20px;
 				border-right: 1px solid #ddd;
 				text-align: center;
@@ -87,17 +86,17 @@ export default {
           /* 从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */
 					box-sizing: border-box;
 					padding: 32px 28px;
-					height: 144px;
 					width: 100%;
-					&:first-child {
+					height: 144px;
+					&:nth-child(1) {
 						border-bottom: 1px solid #ddd;
 					}
 					h4 {
 						text-align: left;
 						// 超出显示...(two)
 						text-overflow: ellipsis;
-						white-space: nowrap;
 						overflow: hidden;
+						white-space: nowrap;
 						// 超出显示...
 					}
 					img {

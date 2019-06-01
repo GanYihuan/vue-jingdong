@@ -38,7 +38,6 @@
 
 <script>
 import Panel from '../core/panel.vue'
-
 export default {
   components: {
     Panel
@@ -87,7 +86,6 @@ export default {
 						height: 90px;
 					}
 					p {
-						display: block;
 						margin-top: 12px;
 						font-size: 26px;
 						text-align: center;

@@ -21,7 +21,6 @@
 
 <script>
 import Slider from '../core/slider.vue'
-
 export default {
   components: {
     Slider
@@ -92,7 +91,6 @@ export default {
 	}
 }
 .list {
-	// flex
 	@include list(row);
 	justify-content: space-around;
 	padding-top: 40px;

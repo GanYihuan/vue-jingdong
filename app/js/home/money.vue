@@ -19,7 +19,6 @@
 
 <script>
 import Panel from '../core/panel.vue'
-
 export default {
   components: {
     Panel
@@ -70,8 +69,7 @@ export default {
 		&:after {
 			box-sizing: border-box;
 			display: block;
-			/* 允许有偏移量 */
-			position: relative;
+      position: relative;
 			top: -208px;
 			border-bottom: 1px solid #ddd;
 			width: 100%;
@@ -88,16 +86,15 @@ export default {
 			&:after {
 				display: block;
 				position: absolute;
-				top: 50%;
 				right: 0;
-				margin-top: -68px;
+				top: 50%;
+				margin-top: -68px; // 水平垂直居中一: margin half
 				border-right: 1px solid #eee;
 				width: 1px;
 				height: 136px;
 				content: ' ';
 			}
-			/* 后面的断线不需要, 2n 偶数 */
-			/* nth-child 非数组下标 */
+			/* 后面的断线不需要, 2n: 偶数, nth-child 非数组下标 */
 			&:nth-child(2n) {
 				/* 断线 */
 				&:after {
@@ -110,9 +107,9 @@ export default {
 				color: #333;
 				span {
 					margin-left: 2px;
-					border: 1px solid #ff5155;
 					padding: 0 8px;
-					vertical-align: 1px;
+					border: 1px solid #ff5155;
+					vertical-align: 1px; // sets vertical alignment of an inline or table-cell box
 					font-size: 22px;
 					color: #ff5155;
 				}
@@ -147,6 +144,6 @@ export default {
 				}
 			}
 		}
-	}
+  }
 }
 </style>

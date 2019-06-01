@@ -15,7 +15,6 @@
 <script>
 import Panel from '../core/panel.vue'
 import Slider from '../core/slider.vue'
-
 export default {
   components: {
     Panel,
@@ -46,9 +45,9 @@ export default {
         }
       ],
       options: {
-        slidesPerView: 2.3,
-        spaceBetween: 30,
-        freeMode: true
+        slidesPerView: 2, // 设置slider容器能够同时显示的slides数量
+        spaceBetween: 30, // slide之间的距离（单位px）
+        freeMode: true // 默认为false，普通模式：slide滑动时只滑动一格，并自动贴合wrapper，设置为true则变为free模式，slide会根据惯性滑动且不会贴合
       }
     }
   }

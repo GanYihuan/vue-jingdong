@@ -10,7 +10,6 @@
 
 <script>
 import btn from '../core/btn.vue'
-
 export default {
   components: {
     btn
@@ -45,9 +44,9 @@ export default {
 	.btnDownload {
 		float: right;
 		margin: 28px 24px 0 0;
+		padding: 0;
 		border-radius: 4px;
 		border-width: 0;
-		padding: 0;
     min-width: 120px;
     /* 文字垂直居中 */
 		height: 56px;
