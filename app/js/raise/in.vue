@@ -127,8 +127,8 @@ export default {
 			.list {
 				@include flex(row);
 				.product {
-					position: relative;
 					box-sizing: border-box;
+					position: relative;
 					width: 50%;
 					height: 396px;
 					text-align: center;
@@ -161,8 +161,8 @@ export default {
 					}
 					article {
 						@include flex(row);
-						align-items: center;
 						justify-content: space-around;
+						align-items: center;
 						margin-top: 16px;
 						padding: 0 20px;
 						height: 30px;
