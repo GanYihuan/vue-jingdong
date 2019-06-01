@@ -38,7 +38,7 @@ body {
 		width: 100%;
 		height: 1136px;
 		> div {
-			margin-top: -400px;
+			margin-top: -400px; // 容器水平垂直居中一: margin half
 			width: 600px;
 			height: 800px;
 			background: url(https://img12.360buyimg.com/jrpmobile/jfs/t8956/285/1249806938/50853/8cd3c8f0/59b65f36N05367075.png?)
@@ -55,11 +55,11 @@ body {
 			);
 			position: fixed;
 			bottom: 130px;
-			box-shadow: 0 12px 32px 0 rgba(255, 159, 135, 0.6);
 			width: 471px;
 			height: 100px;
 			line-height: 100px;
 			background-image: linear-gradient(270deg, #f55c33 0, #ee2d1b 75%);
+			box-shadow: 0 12px 32px 0 rgba(255, 159, 135, 0.6);
 		}
 		span {
 			position: fixed;
