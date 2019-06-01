@@ -23,7 +23,6 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-
 export default {
   components: {
     swiper,
@@ -42,7 +41,6 @@ export default {
     },
     options: {
       type: Object,
-      /* 任何对象都要返回 */
       default() {
         return {
           autoplay: true,

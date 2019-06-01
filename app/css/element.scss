@@ -8,9 +8,9 @@
   $radius: 5px
 ) {
   display: inline-block;
+  padding: $padding;
   border: 1px solid $bgcolor;
   border-radius: $radius;
-  padding: $padding;
   line-height: 1;
   text-align: center;
   font-size: $size;
@@ -45,6 +45,5 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    /* 超出显示... */
   }
 }
