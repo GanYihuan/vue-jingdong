@@ -49,6 +49,7 @@
 
 <script>
 import Panel from '../core/panel.vue'
+
 export default {
   components: {
     Panel
@@ -61,11 +62,9 @@ export default {
 
 .panel {
 	@include panel;
-	// width: 100%
 	position: fixed;
 	left: 0;
 	right: 0;
-	// width: 100%
 	bottom: 0;
 	margin: 0;
 	height: 100px;

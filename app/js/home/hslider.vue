@@ -21,6 +21,7 @@
 
 <script>
 import Slider from '../core/slider.vue'
+
 export default {
   components: {
     Slider

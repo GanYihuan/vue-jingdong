@@ -10,6 +10,7 @@
 
 <script>
 import btn from '../core/btn.vue'
+
 export default {
   components: {
     btn
@@ -24,8 +25,8 @@ export default {
 	position: fixed;
 	top: 0;
 	// position: fixed, left:0, right:0 -> width: 100%
-	right: 0;
 	left: 0;
+	right: 0;
 	/* dpr=2, 手机网页显示 50px, 设计稿写 50*2=100px */
 	height: 100px;
 	line-height: 100px;

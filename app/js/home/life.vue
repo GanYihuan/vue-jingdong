@@ -40,6 +40,7 @@
 
 <script>
 import Panel from '../core/panel.vue'
+
 export default {
   components: {
     Panel
@@ -71,7 +72,6 @@ export default {
 				text-overflow: ellipsis;
 				white-space: nowrap;
 				overflow: hidden;
-				/* 显示...(two) */
 				&:nth-child(3) {
 					color: #ff801a;
 				}

@@ -19,6 +19,7 @@
 
 <script>
 import Panel from '../core/panel.vue'
+
 export default {
   components: {
     Panel
@@ -77,9 +78,9 @@ export default {
 			content: ' ';
 		}
 		.item {
+      box-sizing: border-box;
 			/* 为下面 position: absolute 准备 */
 			position: relative;
-			box-sizing: border-box;
 			padding: 34px 16px;
 			width: 50%;
 			/* 竖线 */
@@ -87,16 +88,16 @@ export default {
 				display: block;
 				position: absolute;
 				right: 0;
-				top: 50%;
-				margin-top: -68px; // 水平垂直居中一: margin half
+				top: 50%; // 垂直居中: margin half
+				margin-top: -68px; // 垂直居中: margin half
 				border-right: 1px solid #eee;
 				width: 1px;
-				height: 136px;
+				height: 136px; // 垂直居中: margin half
 				content: ' ';
 			}
 			/* 后面的断线不需要, 2n: 偶数, nth-child 非数组下标 */
 			&:nth-child(2n) {
-				/* 断线 */
+				/* 竖线 */
 				&:after {
 					display: none;
 				}
@@ -109,7 +110,7 @@ export default {
 					margin-left: 2px;
 					padding: 0 8px;
 					border: 1px solid #ff5155;
-					vertical-align: 1px; // sets vertical alignment of an inline or table-cell box
+					vertical-align: 1px;
 					font-size: 22px;
 					color: #ff5155;
 				}
@@ -119,7 +120,6 @@ export default {
 					/* 文字垂直居中 */
 					height: 58px;
 					line-height: 58px;
-					/* 文字垂直居中 */
 					font-weight: 700;
 					font-size: 44px;
 					color: #ff5155;
@@ -127,20 +127,17 @@ export default {
 					text-overflow: ellipsis;
 					white-space: nowrap;
 					overflow: hidden;
-					/* 显示...(two) */
 				}
 				&:nth-child(3) {
 					/* 文字垂直居中 */
 					height: 34px;
 					line-height: 34px;
-					/* 文字垂直居中 */
 					font-size: 24px;
 					color: #999;
 					/* 显示...(two) */
 					overflow: hidden;
 					text-overflow: ellipsis;
 					white-space: nowrap;
-					/* 显示...(two) */
 				}
 			}
 		}

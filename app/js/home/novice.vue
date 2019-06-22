@@ -34,6 +34,7 @@
 
 <script>
 import Panel from '../core/panel.vue'
+
 export default {
   components: {
     Panel
@@ -52,7 +53,7 @@ export default {
 	.content {
 		@include list(row);
 		.item {
-			/* 从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */
+			/* border-box; 从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */
 			box-sizing: border-box;
 			width: 50%;
 			&:nth-child(1) {
@@ -83,7 +84,6 @@ export default {
 			ul {
 				width: 100%;
 				li {
-          /* 从已设定的宽度和高度分别减去边框和内边距才能得到内容的宽度和高度 */
 					box-sizing: border-box;
 					padding: 32px 28px;
 					width: 100%;
@@ -97,7 +97,6 @@ export default {
 						text-overflow: ellipsis;
 						overflow: hidden;
 						white-space: nowrap;
-						// 超出显示...
 					}
 					img {
 						float: right;

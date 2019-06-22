@@ -13,4 +13,3 @@ new Vue({
   },
   template: '<App/>'
 })
-/* eslint-enable no-new */

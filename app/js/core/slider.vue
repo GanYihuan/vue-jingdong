@@ -23,6 +23,7 @@
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
+
 export default {
   components: {
     swiper,
@@ -45,7 +46,7 @@ export default {
         return {
           autoplay: {
             delay: 3000,
-            disableOnInteraction: false // 用户操作swiper之后，是否禁止autoplay。默认为true：停止。
+            disableOnInteraction: false // 用户操作swiper之后，是否禁止 autoplay。默认为 true 停止
           },
           loop: true,
           pagination: {
