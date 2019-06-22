@@ -13,6 +13,7 @@
 <script>
 import Panel from '../core/panel.vue'
 import Slider from '../core/slider.vue'
+
 export default {
   components: {
     Panel,
