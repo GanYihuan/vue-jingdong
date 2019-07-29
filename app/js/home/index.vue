@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <Heador/>
+    <Header/>
     <Slider/>
     <Novice/>
     <Borrow/>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Heador from '../public/header.vue'
+import Header from '../public/header.vue'
 import Slider from './hslider.vue'
 import Novice from './novice.vue'
 import Borrow from './borrow.vue'
@@ -25,7 +25,7 @@ import Navbar from '../public/navbar.vue'
 
 export default {
   components: {
-    Heador,
+    Header,
     Slider,
     Novice,
     Borrow,
