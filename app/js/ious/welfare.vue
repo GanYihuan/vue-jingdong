@@ -59,11 +59,13 @@ export default {
 		.item {
 			@include flex(row);
 			height: 140px;
-			align-items: center;
+      align-items: center;
+      position: relative;
+      /* 横线 */
 			&:after {
-				box-sizing: border-box;
-				margin-left: 150px;
-				border-bottom: 1px solid #ddd;
+        display: block;
+        margin-left: 150px;
+				border-top: 1px solid #ddd;
 				height: 0;
 				width: 100%;
 				content: ' ';
@@ -90,7 +92,6 @@ export default {
 					white-space: nowrap;
 					text-overflow: ellipsis;
 					overflow: hidden;
-					/* 显示...(two) */
 				}
 			}
 			> em {

@@ -146,8 +146,8 @@ export default {
 					.price {
             height: 48px;
 						line-height: 48px;
-						font-family: PingFangSC-Semibold;
             font-size: 20px;
+						font-family: PingFangSC-Semibold;
 						color: #999;
 						em {
 							margin-right: 4px;
@@ -195,8 +195,8 @@ export default {
 						top: 0;
 						padding: 4px 8px;
 						text-align: center;
-						font-family: PingFangSC-Medium;
 						font-size: 20px;
+						font-family: PingFangSC-Medium;
 						color: #ff0000;
 						background-image: linear-gradient(-35deg, #c1c1c1 0, #acacac 100%);
 					}

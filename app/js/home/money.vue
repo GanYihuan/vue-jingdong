@@ -65,21 +65,19 @@ export default {
 	.content {
 		@include flex(row);
 		justify-content: space-around;
-		box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
 		/* 横线 */
 		&:after {
-			box-sizing: border-box;
 			display: block;
       position: relative;
 			top: -208px;
-			border-bottom: 1px solid #ddd;
+			border-top: 1px solid #ddd;
 			width: 100%;
-			height: 0;
 			content: ' ';
 		}
 		.item {
       box-sizing: border-box;
-			/* 为下面 position: absolute 准备 */
 			position: relative;
 			padding: 34px 16px;
 			width: 50%;
@@ -95,11 +93,11 @@ export default {
 				height: 136px; // 垂直居中: margin half
 				content: ' ';
 			}
-			/* 后面的断线不需要, 2n: 偶数, nth-child 非数组下标 */
+			/* 后面的断线不需要 */
 			&:nth-child(2n) {
 				/* 竖线 */
 				&:after {
-					display: none;
+					display: none; // display: none 元素不被渲染, position & float 不起作用
 				}
 			}
 			dt {
@@ -120,8 +118,8 @@ export default {
 					/* 文字垂直居中 */
 					height: 58px;
 					line-height: 58px;
-					font-weight: 700;
 					font-size: 44px;
+					font-weight: 700;
 					color: #ff5155;
 					/* 显示...(two) */
 					text-overflow: ellipsis;
